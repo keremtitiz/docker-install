@@ -1,5 +1,6 @@
 #!/bin/sh
-echo " Docker Ce - Debian Installerv"
+echo -n " Docker Ce - Debian Installer "
+echo -n " for root user "
 
 apt update
 apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
@@ -10,3 +11,5 @@ apt install docker-ce -y
 usermod -aG docker ${USER}
 systemctl enable docker
 systemctl start docker
+
+echo -n " Ended "

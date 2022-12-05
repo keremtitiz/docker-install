@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 echo " Docker Ce - Debian Installerv"
+
 apt update
 apt install apt-transport-https ca-certificates curl gnupg2 software-properties-common -y
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
